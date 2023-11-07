@@ -1,0 +1,60 @@
+# Смешать два цвета
+
+str1 = input()
+str2 = input()
+
+ch = "красный"
+ch1 = "синий"
+ch2 = "желтый"
+
+if (
+    str1.find(ch) != -1
+    and str2.find(ch1) != -1
+    or str1.find(ch1) != -1
+    and str2.find(ch) != -1
+):
+    print("фиолетовый")
+
+elif (
+    str1.find(ch) != -1
+    and str2.find(ch2) != -1
+    or str2.find(ch) != -1
+    and str1.find(ch2) != -1
+):
+    print("оранжевый")
+
+elif (
+    str1.find(ch1) != -1
+    and str2.find(ch2) != -1
+    or str2.find(ch1) != -1
+    and str1.find(ch2) != -1
+):
+    print("зеленый")
+
+elif (
+    str1.find(ch) != -1
+    and str2.find(ch) != -1
+    or str2.find(ch) != -1
+    and str1.find(ch) != -1
+):
+    print("красный ")
+
+elif (
+    str1.find(ch1) != -1
+    and str2.find(ch1) != -1
+    or str2.find(ch1) != -1
+    and str1.find(ch1) != -1
+):
+    print("синий ")
+
+elif (
+    str1.find(ch2) != -1
+    and str2.find(ch2) != -1
+    or str2.find(ch2) != -1
+    and str1.find(ch2) != -1
+):
+    print("желтый")
+
+
+else:
+    print("ошибка цвета")
